@@ -4,8 +4,8 @@ import torch
 
 class Dictionary(object):
     def __init__(self):
-        self.word2idx = {}
-        self.idx2word = []
+        self.word2idx = {}  # 字典，key是word，value是所在列表位置
+        self.idx2word = []  # 列表
 
     def add_word(self, word):
         if word not in self.word2idx:
